@@ -1,0 +1,49 @@
+body,
+html,
+#home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/capa.png),
+        url(../img/ruido.png),
+        linear-gradient(50deg, #ff4199, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.navbar-transparente {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #9bf0e1 !important;
+}
+
+
+h1 {
+    letter-spacing: -0.05em;
+}
+
+.btn-primary {
+    background-color: #7c26f8!important;
+}
+
+.text-purple {
+    color: #7c26f8;
+}
+
+.text-greenlimon {
+    color: #9bf0e1;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1 !important;
+}
