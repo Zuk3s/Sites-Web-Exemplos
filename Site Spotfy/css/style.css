@@ -21,6 +21,10 @@ nav.navbar-transparente {
     color: #9bf0e1 !important;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    width: 8%;
+}
+
 
 h1 {
     letter-spacing: -0.05em;
