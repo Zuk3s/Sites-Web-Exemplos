@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+    font-style: italic;
+    color: aliceblue;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: url(./img/IMG_3932.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 45px !important;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1 !important;
+}
+
+main {
+    height: 100%;
+    background-color: rgba(1, 15, 37, 0.247);
+}
+
+.caixa-presente {
+    height: auto;
+    background-color: rgb(168, 15, 15);
+    transition: background-color 0.3s;
+    display: flex;
+    padding: 25px 15px;
+    border-radius: 25px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 5px 5px 10px #000;
+}
+
+.fita-vertical {
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    background-color: rgb(190, 172, 6);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s;
+
+    box-shadow: 5px 5px 10px #000;
+}
+
+.fita-horisontal {
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(190, 172, 6);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+
+    box-shadow: 5px 5px 10px #000;
+}
+
+.fita-vertical::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid rgb(190, 172, 6);
+    position: absolute;
+    left: calc(50% - 90px);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: content 0.3s;
+    box-shadow: -5px 1px 5px #000;
+}
+
+.fita-vertical::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid rgb(190, 172, 6);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: content 0.3s;
+
+    box-shadow: 5px 5px 10px #000;
+}
+
+.caixa-presente:hover {
+    background-color: transparent;
+}
+
+.caixa-presente:hover .fita-horisontal,
+.caixa-presente:hover .fita-vertical,
+.caixa-presente:hover .fita-vertical::before,
+.caixa-presente:hover .fita-vertical::after {
+    background-color: transparent;
+    content: none;
+}
+
+
+
+.text {
+    position: relative;
+    z-index: -1;
+}
+
+.paragrafo {
+    text-align: start;
+}
+
+
+
+.destaque {
+    color: rgb(134, 190, 255);
+    font-weight: 700;
+    display: inline-block;
+}
+
+emoji {
+    font-style: normal;
+}

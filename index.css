@@ -1,0 +1,53 @@
+
+  
+  .Card-Titulo {
+    color: #E9EBF8;
+  }
+  
+  .produto {
+    max-width: 9.5cm;
+    height: 13.5cm;
+    width: 50%;
+    background-color: #472a2a;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .produto:hover {
+    transform: scale(1.05);
+  }
+  
+  .imagem-produto {
+    height: 90%;
+  }
+  
+  .conf-imagem {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Card-Descrição {
+    color: #ffffff;
+    width: 100%;
+    height: 13.5cm;
+    margin-top: 2rem;
+    position: absolute;
+    top: 100%;
+    transition: top 0.55s;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  .produto:hover .Card-Descrição {
+    top: 0;
+  }
+  
+  .imagem-produto, .Card-Titulo {
+    transition: opacity 0.3s;
+  }
+  
+  .produto:hover .imagem-produto, .produto:hover .Card-Titulo {
+    opacity: 0;
+  }

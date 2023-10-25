@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="min-height: 100vh; place-items: center; display: grid; position: relative;">
+    <div className="rounded-3 d-flex flex-column produto">
+        <div className='imagem-produto rounded-top-3'>
+            <img src={produto.urlImagem} className="img-fluid conf-imagem" alt="Imagem" />
+        </div>
+        <div className="Card-Titulo pt-2">
+            <h5 className="fs-4 text-center">{produto.nome}</h5>
+        </div>
+        <div className='Card-Descrição rounded-3'>
+            <div className='d-flex flex-column align-items-start justify-content-between mx-4'>
+                <div className=''>
+                    <h3 className='fs-2'>Descrição</h3>
+                    <p className='fs-8 Hammer text-break font-monospace'>{produto.descricao}</p>
+                </div>
+                <div>
+                    <p className="text-end align-self-end fs-5 fw-lighter Hammer">R${produto.preco},00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
