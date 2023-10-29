@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    cursor: none;
 }
 
 body {
@@ -122,17 +123,21 @@ header {
     z-index: 3;
 }
 
-.Conteúdo {
-    position: relative;
-    background-color: #003329;
-    padding: calc(5% + 15px);
-    z-index: 10;
+
+#circle-cursor{
+    z-index: 999;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
 }
 
 .Conteúdo h2 {
     font-size: 3em;
     color: #ffffffd8;
     line-height: calc(2em * 1.1);
+    display: inline;
 }
 
 .Conteúdo p {
@@ -170,3 +175,4 @@ header {
     background-color: #359381;
     color: #fff;
 }
+
