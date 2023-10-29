@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-:root {
-    --titulo: 6em;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -83,7 +79,7 @@ header {
 
 #texto {
     position: absolute;
-    font-size: var(--titulo);
+    font-size: 6em;
     color: #ffffffa2;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, -2);
@@ -99,16 +95,27 @@ header {
 }
 
 
-#texto {
-    position: absolute;
-    font-size: var(--titulo);
-    color: #ffffffc5;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, -2);
-    letter-spacing: calc(var(--titulo) / -100);
-    z-index: 1;
+.Conteúdo h2 {
+    font-size: 3em;
+    color: #ffffffd8;
+    line-height: 1.7;
+    font-display: inherit;
 }
 
+.Conteúdo h3 {
+    font-size: 2.3em;
+    color: #ffffffd8;
+    line-height: 1.7;
+}
+
+.Conteúdo p {
+    font-size: 1em;
+
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: calc(1em * 1.2);
+}
 
 #hill1,
 #hill2,
@@ -131,7 +138,6 @@ header {
     z-index: 3;
 }
 
-
 #circle-cursor {
     z-index: 999;
     width: 17px;
@@ -140,21 +146,6 @@ header {
     position: fixed;
     pointer-events: none;
     transition: transform 350ms, background-color 300ms;
-}
-
-.Conteúdo h2 {
-    font-size: 3em;
-    color: #ffffffd8;
-    line-height: calc(2em * 1.1);
-    display: inline;
-}
-
-.Conteúdo p {
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
-    line-height: 1.7;
-    margin-bottom: calc(1em * 1.2);
 }
 
 /* Conf Sites */
