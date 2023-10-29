@@ -23,16 +23,18 @@ header {
     width: 100%;
     padding: calc(1% + 20px) calc(5% + 20px);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     z-index: 100;
-    gap: calc(40% - 130px);
+    gap: calc(20%);
 }
 
 .logo {
     font-size: 2em;
     color: #359381;
     pointer-events: none;
+    max-width: 350px;
 }
 
 .navegação {
@@ -48,6 +50,12 @@ header {
     font-size: 1.2em;
     border-radius: 20px;
     font-weight: 600;
+    transform: scale(1);
+    transition: transform 200ms, color 500ms;
+}
+
+.navegação a:hover {
+    transform: scale(1.18);
 }
 
 .navegação a:hover,
@@ -124,13 +132,14 @@ header {
 }
 
 
-#circle-cursor{
+#circle-cursor {
     z-index: 999;
     width: 17px;
     height: 17px;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
+    transition: transform 350ms, background-color 300ms;
 }
 
 .Conteúdo h2 {
@@ -144,7 +153,7 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
-    line-height: 1.7em;
+    line-height: 1.7;
     margin-bottom: calc(1em * 1.2);
 }
 
@@ -159,20 +168,14 @@ header {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #359381;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
     background: #003329;
 }
-
-::-webkit-scrollbar-button {
-    background-color: #359381;
-    color: #fff;
-}
-
